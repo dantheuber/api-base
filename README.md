@@ -1,5 +1,22 @@
 # api-base
 
+A base framework using `generator-swaggerize`, slightly modified.
+
+```shell
+# start the app
+npm start
+
+# run tests
+npm test
+
+# coverage
+npm cover
+
+# lint code
+npm lint
+
+```
+
 ```json
 {
   "swagger": "2.0",
