@@ -1,6 +1,6 @@
 # api-base
 
-A base framework using `generator-swaggerize`, slightly modified.
+A base framework created using [generator-swaggerize](https://github.com/krakenjs/generator-swaggerize).
 
 
 ## Install
