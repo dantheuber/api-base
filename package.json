@@ -27,15 +27,11 @@
         "enjoi": "~0.1.16" ,
         "supertest": "~0.13.0"
     },
-    "scripts": {
-        "test": "tape test/*.js",
-        "cover": "istanbul cover tape -- test/*.js",
-        "lint": "jshint -c .jshintrc lib/**/*.js"
-    },
     "scripts" : {
+        "start": "node server.js",
         "test" : "tape tests/*.js",
         "cover" : "istanbul cover tape -- tests/*.js",
-        "lint" : "jshint -c .jshintrc index.js handlers models"
+        "lint" : "jshint -c .jshintrc index.js handlers models lib/**/*.js"
     },
     "main" : "./server"
 }
