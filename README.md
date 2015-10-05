@@ -24,7 +24,7 @@ npm install
 ```
 
 
-## Start Workng
+## Start Working
 ```shell
 # start the app
 npm start
