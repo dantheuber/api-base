@@ -29,13 +29,10 @@ npm install
 # start the app
 npm start
 
-# run tests
+# run tests and coverage
 npm test
-
-# coverage
-npm cover
-
-# lint code
-npm lint
-
 ```
+
+## TODO:
+- 100% coverage
+- Swagger-docs do not appear to be building properly? entire specs do not appear to be present when visiting /v1/api-docs.json
