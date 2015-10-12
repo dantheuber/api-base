@@ -34,5 +34,6 @@ npm test
 ```
 
 ## TODO:
+- gulp run server and watch files properly
 - 100% coverage
 - Swagger-docs do not appear to be building properly? entire specs do not appear to be present when visiting /v1/api-docs.json

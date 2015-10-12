@@ -4,7 +4,7 @@
   "description": "A base frame work for express based api's",
   "main": "server.js",
   "scripts": {
-    "test": "istanbull mocha tests/*.js",
+    "test": "istanbull mocha tests/**/*.js",
     "start": "node server.js"
   },
   "repository": {
@@ -28,5 +28,21 @@
     "minimist": "^1.2.0",
     "mongoose": "^4.1.10",
     "swagger-node-express": "^2.1.3"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "git-rev": "^0.2.1",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-istanbul": "^0.10.1",
+    "gulp-istanbul-report": "0.0.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-mocha": "^2.1.3",
+    "gulp-shell": "^0.5.0",
+    "jshint-stylish": "^2.0.1",
+    "proxyquire": "^1.7.3",
+    "rimraf": "^2.4.3",
+    "sinon": "^1.17.1",
+    "sinon-chai": "^2.8.0"
   }
 }
