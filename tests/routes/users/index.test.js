@@ -4,7 +4,7 @@ var chai = require('chai');
 var expect = chai.expect;
 var sinon = require('sinon');
 chai.use(require('sinon-chai'));
-var proxyquire = require('proxyquire');
+var proxyquire = require('proxyquire').noCallThru();
 var SutPath = '../../../lib/routes/users/';
 
 describe('routes/users', function() {
@@ -61,6 +61,21 @@ describe('routes/users', function() {
 
   it('includes GET methods', function() {
     stubs.glob.sync().map().forEach.getCall(0).args[0]('./get.js');
-    expect(stubs['./get.js']).to.have.been.called;
+    expect(swagger.addGet).to.have.been.called;
+  });
+
+  it('includes POST methods', function() {
+    stubs.glob.sync().map().forEach.getCall(0).args[0]('./post.js');
+    expect(swagger.addPost).to.have.been.called;
+  });
+
+  it('includes PUT methods', function() {
+    stubs.glob.sync().map().forEach.getCall(0).args[0]('./put.js');
+    expect(swagger.addPut).to.have.been.called;
+  });
+
+  it('includes DELETE methods', function() {
+    stubs.glob.sync().map().forEach.getCall(0).args[0]('./delete.js');
+    expect(swagger.addDelete).to.have.been.called;
   });
 });
