@@ -1,5 +1,5 @@
 'use strict';
-
+/*jshint -W030 */
 var chai = require('chai');
 var expect = chai.expect;
 var sinon = require('sinon');
@@ -23,5 +23,5 @@ describe('routes/util/setHeaders', function() {
   it('sets query headers if queries passed', function() {
     sut(res, {some:'query'}, 0);
     expect(res.header).to.have.been.calledTwice;
-  })
+  });
 });

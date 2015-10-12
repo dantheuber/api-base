@@ -1,5 +1,5 @@
 'use strict';
-
+/*jshint -W030 */
 var chai = require('chai');
 var expect = chai.expect;
 var sinon = require('sinon');
@@ -17,7 +17,7 @@ describe('init swaggerize', function() {
   beforeEach(function() {
     subpath = {
       example: 'subpath'
-    }
+    };
     stubs = {
       'swagger-node-express': {
         setAppHandler: sinon.spy(),
